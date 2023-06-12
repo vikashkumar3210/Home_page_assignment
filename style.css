@@ -1,0 +1,261 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    word-spacing: 2px;
+    text-decoration: none;;
+}
+a{
+    color:orange;
+}
+span ,p{
+    color:gray;
+}
+h4{
+    font-size:15px;
+    font-weight:bold;
+}
+h4,h5,img,p{
+    margin:10px auto;
+}
+
+
+body{
+    width:100vw;
+    height:100vh;
+    background-image: url("images/1sst_backgroundimage.jpg");
+    background-repeat:no-repeat;
+    background-size:100% 900px;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:0.3fr 1fr 0.4fr;
+    grid-template-areas: "header_" "main_" "footer_";
+    grid-row-gap:10px;
+    justify-items: center;
+    align-items: center;
+
+}
+header{
+    width:60%;
+    height:300px;
+    grid-area: header_;
+    border-radius: 4px;
+
+}
+nav{
+    width:100%;
+    height:50%;
+    background-color:white;
+    margin:0 auto;
+}
+.nav_main{
+    display:flex;
+    width:100%;
+    height:100%;
+    flex-direction:column;
+    margin-bottom:0;
+    justify-content:flex-end;
+    padding:20px;
+
+}
+.nav-search,.menu{
+    display:flex;
+    flex-direction:row;
+    align-items:flex-end;
+}
+header ul{
+    display:flex;
+    flex-direction:row;
+    align-items:flex-end; 
+}
+.nav-search i{
+    margin:auto 5px;
+
+}
+.menu{
+    justify-content: space-between;
+    
+}
+h1 span{
+    color:grey;
+}
+ul li{
+    list-style: none;
+    padding:0 8px;
+    
+}
+.menu h1{
+    font-size:30px;;
+}
+main{
+    width:60%;
+    grid-area: main_;
+    display:grid;
+    background-color: rgb(255,255,255);
+    grid-template-columns:1fr;
+    grid-template-rows:1fr 0.7fr repeat(5,1fr);
+    justify-items: center;
+    align-items: center;
+    grid-row-gap:30px;
+    padding:20px;
+
+}
+.section1{
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+}
+.img_ , h3, h5,p{
+    margin-bottom: 5px;
+    line-height: 1.2;
+}
+.main_section1{
+    width:48%;
+    
+}
+.section1 img{
+    width:100%;  
+}
+.section2{
+    width:100%;
+}
+#section2_{
+    width:100%;
+    margin:0 auto;
+    display:flex;
+    justify-content: space-between;
+    
+}
+#section2_ .img_{
+    width:48%;
+
+}
+#section2_ .img_ img{
+    width:100%;
+    height:100%;
+}
+#section2_ a{
+    color:skyblue;
+}
+.section2 span{
+    float:right;
+}
+.section3{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+
+}
+#section3_1{
+width:30%;
+display:flex;
+align-items:center;
+}
+#section3_2{
+    width:65%;
+}
+.section3 img{
+    width:100%;
+    
+}
+.main_section4{
+    width:100%;
+    height:100%
+}
+.main_section4>div{
+    width:100%;
+   display:grid;
+   grid-template-columns: repeat(4,1fr);
+   grid-template-rows:1fr;
+   grid-column-gap:5px;
+   place-items:center center;
+
+
+}
+.main_section4_1{
+    width:100%;
+}
+.main_section4_1 img{
+    width:100%;
+}
+.main_section4_1 a{
+    color:skyblue;
+}
+#main_section5{
+    width:100%;
+    height:100%;
+    margin-top:20px;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+}
+ #main_section5 img{
+    width:100%;
+    height:60%;
+}
+
+#main_section5 span{
+    float:right;
+    margin:4px;
+}
+.section7 a{
+    color:blue;
+}
+footer{
+    width:100%;
+    grid-area:footer_;
+    
+background: #4A4D4E;
+background: linear-gradient(225deg, #4A4D4E, #312E32);
+color:white;
+}
+#footer_main{
+    width:60%;
+    padding:20px;
+    display:flex;
+    margin:0 auto;
+    flex-direction:column;
+}
+#footer-main1,#footer-main2,#footer-main3{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    
+}
+#footer_main h4 ,h5 {
+    margin:20px auto;
+}
+#footer_main ul{
+    margin:20px auto;
+    line-height:1.5;
+}
+#footer_main ul li{
+     list-style:none;
+}
+#footer_main h4{
+    color:orange;
+    font-weight: bolder;
+}
+.main_hidden{
+    visibility: hidden;
+}
+#footer-main2 img{
+    width:100px;
+}
+
+.footer-main3_1{
+width:45%;
+}
+.footer-main3_2{
+    width:23%;
+}
+#main_social{
+    margin:8px auto;
+    display:flex;
+    justify-content: space-between;
+}
+
+#footer-end{
+    width:40%;
+    display:flex;
+}
